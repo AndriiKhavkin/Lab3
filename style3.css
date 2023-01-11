@@ -79,34 +79,27 @@ body {
   display: flex;
   flex-direction: column;
   float: left;
-  margin-left: 6%;
+  margin-left: 10%;
   color: #ebebeb;
 }
 
 ul {
     padding-left: 0;
+    padding-top: 0;
     list-style: none;
     display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
 }
 
 li {
     display: list-item;
     list-style: none;
-    text-align: -webkit-match-parent;
 }
 
 .button-list {
-  max-width: 18%;
-  /* float: left;
-  margin-left: 1.5%; */
+  
   display: flex;
   column-gap: 10px;
+  margin-top: 0px;
   margin-bottom: 40px;
 }
 
@@ -173,11 +166,9 @@ li {
   color: #363636;
   font-weight: bold;
   font-family: Tw Cen MT;
-  font-size: 50px;
-  /* float: left;
-  margin-left: 6%; */
-  max-width: 18%;
-  border-bottom: 5px solid #363636;
+  font-size: 65px;
+  max-width: 90%;
+  border-bottom: 7px solid #363636;
 }
 
 #info{
