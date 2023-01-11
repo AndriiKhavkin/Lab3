@@ -1,0 +1,239 @@
+* {
+  box-sizing: border-box;
+}
+
+section{
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+.container{
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+/* Style the body */
+body {
+  font-family: Tw Cen MT;
+  margin: 0;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  background-color: #333;
+}
+
+.logo{
+  color: #ffffff;
+  font-weight: bold;
+  font-family: Tw Cen MT;
+  font-size: 20px;
+  display: flex;
+  width: 16%;
+  margin-left: 6%;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: white;
+  padding: 20px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #dddddd;
+  color: black;
+}
+
+.hero{
+  padding: 10%;
+  background: #666666;
+  color: white;
+}
+
+.playbutton{
+  padding-left: 12%;
+  display:flex;
+  gap:30px;
+  align-items:end;
+  color:#dddddd;
+  text-decoration:none;
+}
+
+.button-text{
+  font-size:50px;
+  margin:0;
+  margin-bottom: 5px;
+}
+.button-small-text{
+  color:#43b3d6;
+  font-size: 24px;
+  margin:0;
+  margin-bottom: 10px;
+}
+
+.Portfolio{
+  display: flex;
+  flex-direction: column;
+  float: left;
+  margin-left: 6%;
+  color: #ebebeb;
+}
+
+ul {
+    padding-left: 0;
+    list-style: none;
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+li {
+    display: list-item;
+    list-style: none;
+    text-align: -webkit-match-parent;
+}
+
+.button-list {
+  max-width: 18%;
+  /* float: left;
+  margin-left: 1.5%; */
+  display: flex;
+  column-gap: 10px;
+  margin-bottom: 40px;
+}
+
+.filter-button {
+    min-width: 90px;
+    padding: 8px 20px;
+
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #42b8dd;
+
+    font-family: inherit;
+    font-size: 16px;
+    color: #42b8dd;
+    background-color: #ebebeb;
+    cursor: pointer;
+  }
+
+  .filter-button:hover,
+  .filter-button:focus {
+    color: #ebebeb;
+    background-color: #42b8dd;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  background: #ebebeb;
+}
+
+.tittle {
+  color: #363636;
+  font-weight: bold;
+  font-family: Tw Cen MT;
+  font-size: 50px;
+  /* float: left;
+  margin-left: 6%; */
+  max-width: 18%;
+  border-bottom: 5px solid #363636;
+}
+
+#info{
+  color: #9a9a9a;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+}
+
+
+
+
+.form{width: 400px;}
+.radio-container{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+}
+.radio-container *{
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.radio-container .radio-btn{
+  overflow: hidden;
+}
+.radio-container .radio-btn.nth-2{width: calc(50% - 1px);}
+.radio-container .radio-btn.nth-3{width: calc(33.3333% - 1.4px);}
+.radio-container .radio-btn.nth-4{width: calc(25% - 1.5px);}
+.radio-container .radio-btn label{
+  background: linear-gradient(to bottom, #f8f8fa 0%,#c8c8c7 100%);
+  display: block;
+  padding: 6px 12px;
+  text-align: center;
+  color: #7e7e7e;
+  border-top: 1px solid #b4b5b9;
+  border-bottom: 1px solid #b4b5b9;
+  border-right: 1px solid #b4b5b9;
+}
+.radio-container .radio-btn input{display: none;}
+.radio-container .radio-btn input:checked + label{
+  background: linear-gradient(to bottom, #3f7add 0%,#71acf7 100%);
+  color: #fff;
+}
+.radio-container .radio-btn:first-child label{
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-left: 1px solid #b4b5b9;
+}
+.radio-container .radio-btn:last-child label{
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
