@@ -10,6 +10,7 @@ section{
 .container{
   padding: 0 10px;
   margin: 0 auto;
+  width: 1200px;
 }
 
 /* Style the body */
@@ -76,10 +77,6 @@ body {
 }
 
 .Portfolio{
-  display: flex;
-  flex-direction: column;
-  float: left;
-  padding-left: 10%;
   background-color: #ebebeb;
 }
 
@@ -117,6 +114,7 @@ li {
     color: #42b8dd;
     background-color: #ebebeb;
     cursor: pointer;
+    transition: background-color 0.2s linear, color 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) ;
   }
 
   .filter-button:hover,
@@ -128,11 +126,8 @@ li {
   }
 
   .work-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     gap: 30px;
     margin-left: 0;
   }
@@ -155,7 +150,17 @@ li {
     color: #adadad;
   }
 
+
+  .card__overlay-wrap {
+    position: relative;
+    overflow: hidden;
+  }
+
   .card__overlay {
+    transform: translateY(0);
+    position: absolute;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     text-align: center;
     background-color: #ffffff;
     display: block;
@@ -164,13 +169,17 @@ li {
    
   }
 
+  .card__overlay-wrap:hover .card__overlay, .card__overlay-wrap:focus .card__overlay {
+    transform: translateY(-100%);    
+  }
 
-  .our-team section{
-    display: flex;
-    flex-direction: row;
-    float: left;
-    padding-left: 10%;
+
+  .our-team{
     background-color: #ffffff;
+  }
+
+  .our-team > h2{
+    padding-left: 1000px;
   }
 
   .our-team__list{
@@ -182,11 +191,16 @@ li {
 
   .our-team__item{
     width: 370px;
+    position: relative;
   }
 
   .our-team__member-photo{
     width: 170px;
     border-radius: 100px;
+  }
+
+  .our-team__description-wrap{
+    padding-left: 100px;
   }
   
   .our-team__description-wrap > h3{
@@ -197,6 +211,92 @@ li {
     color: #adadad;
   }
   
+  .social-list--light{
+    padding-top: 10px;
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    left: 140px;
+    top: 60px;
+  }
+
+  .social-list--light > li{
+
+    background-color: #42b8dd;
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .social-list__link--light > img{
+    width: 20px;
+    height: 20px;
+    z-index: 11;
+  }
+
+  .contact-us{
+    background-color: #ebebeb;
+  }
+
+  .info{
+   width: 370px;
+  }
+
+  form{
+    display: flex;
+    align-items: flex-end;
+  }
+
+  fieldset {
+    border: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    column-gap: 30px;
+    width: 770px;
+  }
+
+  .EmailForm, 
+  .NameForm{
+    padding: 20px;  
+    width: 370px ;
+    height: 50px;
+    font-weight: bold;
+    color: #363636;
+    border-color: #363636;
+    border-radius: 2px;
+  }
+
+  .MessageForm{
+    padding: 20px;
+    width: 770px;
+    height: 85px;
+    font-weight: bold;
+    color: #363636;
+    border-color: #363636;
+    border-radius: 2px;
+    resize: none;
+  }
+
+  .SubmitButton{
+    text-align: center;
+    background-color: #ffffff;
+    justify-content: center;
+    font-size: 20px; 
+    width: 370px ;
+    height: 85px;
+    color: #42b8dd;
+    border: none;
+    border-radius: 5px;
+
+  }
+
   /* .card {
     -ms-flex-preferred-size: calc((100% - 60px) / 3);
         flex-basis: calc((100% - 60px) / 3);
@@ -339,10 +439,9 @@ li {
   flex-wrap: wrap;
   font-family: sans-serif;
 }
+
 .radio-container *{
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
+  user-select: none;
 }
 .radio-container .radio-btn{
   overflow: hidden;

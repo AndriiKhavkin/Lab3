@@ -11,14 +11,14 @@
 <body>
 <!-- Navigation Bar -->
 <header>
-<div class="navbar">
+<nav class="navbar">
   <p class="logo">MEOW</p>
   <a href="#">Home</a>
   <a href="#Portfolio">Portfolio</a>
   <a href="#Our_Team">Team</a>
   <a href="#">About</a>
   <a href="#Contact">Contact</a>
-</div>
+</nav>
 </header>
 
 <main>
@@ -35,9 +35,8 @@
 </div>
 </section>
 
-
-<a name="Portfolio">
-<section class="Portfolio">
+<!-- Portfolio section -->
+<section class="Portfolio" id="Portfolio">
   <div class="container">
   <h2 class="tittle">OUR WORKS.</h2>
   <ul class="button-list">
@@ -59,10 +58,10 @@
         <img class="card__image"
         src="https://i.pinimg.com/564x/19/07/31/19073125e883c05eae1d19dec14c964c.jpg"
         alt="Приклад роботи"/>
-      </div>
-      <div class="card__overlay">
-        <h3>Name project</h3>
-        <p>designed by Authour | May 23, 2014</p>
+        <div class="card__overlay">
+          <h3>Name project</h3>
+          <p>designed by Authour | May 23, 2014</p>
+        </div>
       </div>
     </li>
 
@@ -71,10 +70,10 @@
         <img class="card__image"
         src="https://i.pinimg.com/564x/c8/26/19/c82619dbbe3426dceb0e9ae6f685212c.jpg"
         alt="Приклад роботи"/>
-      </div>
-      <div class="card__overlay">
-        <h3>Name project</h3>
-        <p>designed by Authour | May 23, 2014</p>
+        <div class="card__overlay">
+          <h3>Name project</h3>
+          <p>designed by Authour | May 23, 2014</p>
+        </div>
       </div>
     </li>
 
@@ -83,10 +82,10 @@
         <img class="card__image"
         src="https://i.pinimg.com/564x/e7/8f/63/e78f63888a79f35c5dcb4b894a0b54c7.jpg"
         alt="Приклад роботи"/>
-      </div>
-      <div class="card__overlay">
-        <h3>Name project</h3>
-        <p>designed by Authour | May 23, 2014</p>
+        <div class="card__overlay">
+          <h3>Name project</h3>
+          <p>designed by Authour | May 23, 2014</p>
+        </div>
       </div>
     </li>
 
@@ -95,10 +94,10 @@
         <img class="card__image"
         src="https://i.pinimg.com/564x/71/49/20/714920a066913fcce47dbf07949e65e7.jpg"
         alt="Приклад роботи"/>
-      </div>
-      <div class="card__overlay">
-        <h3>Name project</h3>
-        <p>designed by Authour | May 23, 2014</p>
+        <div class="card__overlay">
+          <h3>Name project</h3>
+          <p>designed by Authour | May 23, 2014</p>
+        </div>
       </div>
     </li>
 
@@ -107,10 +106,10 @@
         <img class="card__image"
         src="https://i.pinimg.com/564x/c3/ef/ed/c3efed485e403561ccdc46e0d798e39a.jpg"
         alt="Приклад роботи"/>
-      </div>
-      <div class="card__overlay">
-        <h3>Name project</h3>
-        <p>designed by Authour | May 23, 2014</p>
+        <div class="card__overlay">
+          <h3>Name project</h3>
+          <p>designed by Authour | May 23, 2014</p>
+        </div>
       </div>
     </li>
 
@@ -119,34 +118,18 @@
         <img class="card__image"
         src="https://i.pinimg.com/564x/ca/1c/cb/ca1ccbaf5e3f9c513e5ecb66bc2d7bee.jpg"
         alt="Приклад роботи"/>
-      </div>
-      <div class="card__overlay">
-        <h3>Name project</h3>
-        <p>designed by Authour | May 23, 2014</p>
+        <div class="card__overlay">
+          <h3>Name project</h3>
+          <p>designed by Authour | May 23, 2014</p>
+        </div>
       </div>
     </li>
   </ul>
   </div>
 </section>
 
-<!-- <div class="team">
-  <h2 class="tittle">OUR TEAM.</h2>
-  <p id="info">123A Building, Road Street, Orlando District, US +01 234 567 89 - +01 234 567 89 | contact@book.com</p>
-  <form>
-      <legend a name = "back"><h2>Форма зворотнього зв'язку:</h2></legend>
-      <textarea class="field" style = "padding-top: 15px; padding-left: 15px;">Повідомлення</textarea>
-      <input type="text" name="text" class="styleForm" placeholder=" Name">
-      <p></p>
-      <input type="email" name="login" placeholder="✉ email">
-      <p></p>
-      <input type="text" name="login" placeholder="🖉 Message">
-      <p></p>
-      <button>Submit</button>
-  </form>
-</div> -->
-<a name="Our_Team"></a>
-  <!-- OUR-TEAM section -->
-<section class="our-team section">
+<!-- OUR-TEAM section -->
+<section class="our-team" id="Our_Team">
     <div class="container">
       <h2 class="tittle">OUR TEAM.</h2> 
 
@@ -161,24 +144,21 @@
             <h3 class="our-team__member-title">Michael Joe</h3>
             <p class="our-team__member-position">CEO & Founder</p>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus totam, tempora molestias dignissimos nobis voluptates, cumque odit nisi, explicabo alias aspernatur enim. Est adipisci iure odio eos iusto corrupti laboriosam?</p>
+            
             <ul class="social-list social-list--light">
               <li>
-                <a
-                  class="social-list__link social-list__link--light"
+                  <a class="social-list__link social-list__link--light"
                   href=""
-                  aria-label="instagram"
-                >
-                  <svg class="social-list__icon" width="20" height="20">
-                    <use href="./images/icons.svg#icon-instagram"></use>
-                  </svg>
-                </a>
+                  aria-label="instagram">                  
+                    <img src="https://www.kindpng.com/picc/m/30-300669_twitter-logo-png-twitter-icons-png-white-transparent.png">
+                  </a>
               </li>
+
+              
               <li>
-                <a
-                  class="social-list__link social-list__link--light"
+                <a class="social-list__link social-list__link--light"
                   href=""
-                  aria-label="Twitter"
-                >
+                  aria-label="Twitter"                >
                   <svg class="social-list__icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-twitter"></use>
                   </svg>
@@ -192,17 +172,6 @@
                 >
                   <svg class="social-list__icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a
-                  class="social-list__link social-list__link--light"
-                  href=""
-                  aria-label="Linkedin"
-                >
-                  <svg class="social-list__icon" width="20" height="20">
-                    <use href="./images/icons.svg#icon-linkedin"></use>
                   </svg>
                 </a>
               </li>
@@ -253,17 +222,6 @@
                 >
                   <svg class="social-list__icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a
-                  class="social-list__link social-list__link--light"
-                  href=""
-                  aria-label="Linkedin"
-                >
-                  <svg class="social-list__icon" width="20" height="20">
-                    <use href="./images/icons.svg#icon-linkedin"></use>
                   </svg>
                 </a>
               </li>
@@ -318,25 +276,35 @@
                   </svg>
                 </a>
               </li>
-              <li>
-                <a
-                  class="social-list__link social-list__link--light"
-                  href=""
-                  aria-label="Linkedin"
-                >
-                  <svg class="social-list__icon" width="20" height="20">
-                    <use href="./images/icons.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
-              </li>
             </ul>
           </div>
         </li>
-
       </ul>
     </div>
 </section>
 
+<!-- Contact-Us section -->
+<section class="contact-us" id="Contact">
+  <div class="container">
+    <h2 class="tittle">CONTACT US.</h2>
+    <div class="info">
+      <p>123A Building, Road Street, Orlando District, US</p><p>+01 234 567 89 - +01 234 567 89 | contact@book.com</p>
+    </div> 
+    <form>
+    <fieldset>
+        <input type="email" name="email" class="EmailForm" placeholder="✉ EMAIL">
+        <p></p>
+        <input type="text" name="text" class="NameForm" placeholder="🗛 NAME">
+        <p></p>
+        <textarea type="text" name="login"  class="MessageForm" placeholder="🖉 MESSAGE"></textarea>
+        <p></p>
+    </fieldset>
+    <div>
+      <button class="SubmitButton">✓ Submit</button>
+    </div>
+    </form>
+  </div>
+</section>
 
 <!-- The flexible grid (content) -->
   <!-- <div class="row">
