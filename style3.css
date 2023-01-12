@@ -241,6 +241,7 @@ li {
 
   .contact-us{
     background-color: #ebebeb;
+    padding-bottom: 60px;
   }
 
   .info{
@@ -299,6 +300,7 @@ li {
   .footer{
     padding: 20px;
     background:#252525;
+        text-align:center;
   }
 
   .footer__section{ 
@@ -307,6 +309,32 @@ li {
     height: 175px;
     text-align: center;
   }
+
+  .logo__footer{
+    text-align: center;
+    color: #ffffff;
+    margin: 0;
+    font-weight: bold;
+    font-family: Tw Cen MT;
+    font-size: 20px;
+  }
+  
+  .text_footer{
+    color: #adadad;
+    margin: 10px;
+    text-align: center;
+  }
+
+  .container__footer{
+    text-align: center;
+    width: 280px;
+    display: flex;
+    flex-direction:column;
+    justify-content:center:
+    align-items: center;
+    text-align:center;
+  }
+
 
   /* .card {
     -ms-flex-preferred-size: calc((100% - 60px) / 3);
@@ -413,11 +441,6 @@ li {
   padding: 20px;
 }
 
-/* Footer */
-.footer {
-  padding: 20px;
-  background: #ebebeb;
-}
 
 .tittle {
   color: #363636;
