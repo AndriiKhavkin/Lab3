@@ -223,7 +223,6 @@ li {
   }
 
   .social-list--light > li{
-
     background-color: #42b8dd;
     border-radius: 100px;
     width: 50px;
@@ -295,6 +294,16 @@ li {
     color: #42b8dd;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s linear, color 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) ;
+  }
+
+  .SubmitButton:hover,
+  .SubmitButton:focus {
+    color: #42b8dd;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 5px rgba(0, 0, 0, 0.12);
   }
 
   .footer{
@@ -330,7 +339,7 @@ li {
     width: 280px;
     display: flex;
     flex-direction:column;
-    justify-content:center:
+    justify-content:center;
     align-items: center;
     text-align:center;
   }
